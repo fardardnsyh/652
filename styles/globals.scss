@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.action-btn {
+  @apply text-lg cursor-pointer w-8 h-8 rounded-full flex items-center justify-center transition-all hover:bg-primary/10;
+  &:hover {
+    svg {
+      @apply text-primary;
+    }
+  }
+}
